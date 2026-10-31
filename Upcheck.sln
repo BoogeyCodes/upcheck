@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C91F7630-ACB2-4AD4-9036-992F2F09F1AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Upcheck.Api", "src\Upcheck.Api\Upcheck.Api.csproj", "{7CA95D70-B459-4266-A2E8-C28908C8C44F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F9884531-E161-4ACF-9386-C277FDA0843A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Upcheck.Api.Tests", "tests\Upcheck.Api.Tests\Upcheck.Api.Tests.csproj", "{04F3F978-2805-4A7B-BD7D-DECF29C52F01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CA95D70-B459-4266-A2E8-C28908C8C44F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CA95D70-B459-4266-A2E8-C28908C8C44F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CA95D70-B459-4266-A2E8-C28908C8C44F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CA95D70-B459-4266-A2E8-C28908C8C44F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04F3F978-2805-4A7B-BD7D-DECF29C52F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F3F978-2805-4A7B-BD7D-DECF29C52F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F3F978-2805-4A7B-BD7D-DECF29C52F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F3F978-2805-4A7B-BD7D-DECF29C52F01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7CA95D70-B459-4266-A2E8-C28908C8C44F} = {C91F7630-ACB2-4AD4-9036-992F2F09F1AB}
+		{04F3F978-2805-4A7B-BD7D-DECF29C52F01} = {F9884531-E161-4ACF-9386-C277FDA0843A}
+	EndGlobalSection
+EndGlobal
