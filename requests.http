@@ -1,0 +1,42 @@
+@host = http://localhost:5141
+
+### Health
+GET {{host}}/health
+
+### Status summary (JSON)
+GET {{host}}/api/status
+
+### Status page (HTML)
+GET {{host}}/
+
+### Create a monitor
+POST {{host}}/api/monitors
+Content-Type: application/json
+
+{ "name": "Example", "url": "https://example.com", "intervalSeconds": 60, "failureThreshold": 2 }
+
+@id = 1
+
+### List monitors (with 24h uptime)
+GET {{host}}/api/monitors
+
+### Monitor detail (checks, incidents, 24h/7d stats)
+GET {{host}}/api/monitors/{{id}}
+
+### Run a check right now
+POST {{host}}/api/monitors/{{id}}/check
+
+### Recent checks
+GET {{host}}/api/monitors/{{id}}/checks?limit=50
+
+### Incidents
+GET {{host}}/api/monitors/{{id}}/incidents
+
+### Update a monitor
+PUT {{host}}/api/monitors/{{id}}
+Content-Type: application/json
+
+{ "name": "Example", "url": "https://example.com", "intervalSeconds": 120, "enabled": true }
+
+### Delete a monitor
+DELETE {{host}}/api/monitors/{{id}}
